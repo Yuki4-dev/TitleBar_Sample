@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="TitleBar_Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:TitleBar_Sample"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Grid VerticalAlignment="Top">
+        <Grid x:Name="TitleBar" Background="#DB9FFA">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="20"
+                Text="タイトルバー" />
+            <TextBlock
+                x:Name="RightText"
+                HorizontalAlignment="Right"
+                FontSize="20"
+                Text="右" />
+        </Grid>
+        <Button Grid.Row="0" HorizontalAlignment="Left">
+            <SymbolIcon Symbol="More" />
+        </Button>
+    </Grid>
+</Page>
